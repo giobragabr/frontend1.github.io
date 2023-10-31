@@ -1,0 +1,102 @@
+.corpo {
+  /* background:scroll; */
+  background-image: url("19c98b100021d687cc5f6e5dcf69bd13.jpg");
+  background-size: cover; /* Para cobrir toda a área */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* height: 170vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000; /* Cor de fundo escura para o efeito de transição */
+  transition: background 1s ease; /* Duração e suavidade da transição */
+  color: #fff;
+}
+
+.centro {
+  position: center;
+  padding: 5px;
+  text-align: center;
+}
+
+.texto {
+  font-size: 18px; /* Reduza o tamanho da fonte para melhor encaixar o texto */
+  max-width: 90%; /* Aumente a largura máxima do contêiner para acomodar o texto */
+  margin: 0 auto; /* Centralize o contêiner de texto na página */
+  text-align: justify; /* Alinhe o texto justificado para melhor legibilidade */
+  padding: 20px; /* Adicione espaço interno para o contêiner de texto */
+  line-height: 1.6; /* Aumente o espaço entre as linhas para melhor legibilidade */
+}
+
+.text-container {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fundo com transparência para destacar o texto */
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  transition: background 1s ease;
+  max-width: 80%; /* Define uma largura máxima para o contêiner de texto */
+  margin: 0 auto; /* Centraliza o contêiner de texto na página */
+  text-align: justify; /* Alinha o texto à esquerda */
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+body.dark-background .text-container {
+  background: #333; /* Cor de fundo escura */
+  color: #fff;
+}
+
+/* body.light-background .text-container {
+    background: #fff; Cor de fundo clara
+    color: #000;
+} */
+
+/* body.dark-background .text-container, body.light-background .text-container {
+    transition: background 1s ease; Duração e suavidade da transição de fundo
+} */
+
+.spo {
+  background: black;
+  border: "0";
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5; /* Aumenta o espaço entre as linhas em todo o documento */
+  word-wrap: break-word;
+}
+
+/* .div{
+  border: 1px solid black;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  width: 350px;
+  height: 350px;
+} */
+
+.foto{
+  position: relative;
+  border-radius: 10px;
+  max-height: 400px;
+  height: 350px;
+  width: 350px;
+  object-fit:cover;
+}
